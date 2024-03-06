@@ -24,16 +24,33 @@ func main() {
 	currentWorld.Seed()
 	for { // цикл для вывода каждого состояния
 		// выведем текущее состояние на экран
-		fmt.Println(currentWorld)
+		fmt.Println(currentWorld.String())
 		// рассчитываем следующее состояние
 		NextState(currentWorld, nextWorld)
 		// изменяем текущее состояние
 		currentWorld = nextWorld
 		// делаем паузу
-		time.Sleep(100 * time.Millisecond)
+		time.Sleep(1000 * time.Millisecond)
 		// специальная последовательность для очистки экрана после каждого шага
-		fmt.Print("\033[H\033[2J")
+		if isAllDead(currentWorld) {
+			fmt.Println(currentWorld.String())
+			fmt.Println("Game over")
+			break
+		} else {
+			fmt.Println()
+		}
 	}
+}
+
+func isAllDead(w *World) bool {
+	for i := 0; i < len(w.Cells); i++ {
+		for j := 0; j < len(w.Cells[i]); j++ {
+			if w.Cells[i][j] {
+				return false
+			}
+		}
+	}
+	return true
 }
 
 func (w *World) Seed() {
@@ -41,10 +58,19 @@ func (w *World) Seed() {
 	for _, row := range w.Cells {
 		for i := range row {
 			//rand.Intn(10) возвращает случайное число из диапазона	от 0 до 9
-			if rand.Intn(10) == 1 {
+			if rand.Intn(10) == 1 || rand.Intn(10) == 2 {
 				row[i] = true
 			}
 		}
+	}
+}
+
+func (w *World) Print() {
+	for i := 0; i < len(w.Cells); i++ {
+		for j := 0; j < len(w.Cells[i]); j++ {
+			fmt.Printf("%v ", w.Cells[i][j])
+		}
+		fmt.Println()
 	}
 }
 
@@ -82,14 +108,34 @@ func countIfAlive(x, y int, w *World, counter *int) {
 	}
 }
 
+func (w *World) String() string {
+	brownSquare := "\xF0\x9F\x9F\xAB"
+	greenSquare := "\xF0\x9F\x9F\xA9"
+
+	outputString := ""
+
+	for i := 0; i < len(w.Cells); i++ {
+		for j := 0; j < len(w.Cells[i]); j++ {
+			if w.Cells[i][j] {
+				outputString += greenSquare
+			} else {
+				outputString += brownSquare
+			}
+		}
+		outputString += "\n"
+	}
+
+	return outputString
+}
+
 func (w *World) Next(x, y int) bool {
-	n := w.Neighbours(x, y)      // получим количество живых соседей
-	alive := w.Cells[y][x]       // текущее состояние клетки
+	n := w.Neighbours(x, y) // получим количество живых соседей
+	alive := w.Cells[y][x]  // текущее состояние клетки
+	if n == 3 && !alive {   // если клетка мертва, но у неё трое соседей
+		return true // клетка оживает
+	}
 	if n < 4 && n > 1 && alive { // если соседей двое или трое, а клетка жива
 		return true // то следующее состояние — жива
-	}
-	if n == 3 && !alive { // если клетка мертва, но у неё трое соседей
-		return true // клетка оживает
 	}
 
 	return false // в любых других случаях — клетка мертва

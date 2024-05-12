@@ -22,7 +22,8 @@ def main(task_count):
         if os.path.exists(f'{dir_name}{task_dir_name}{task_name}.go'):
             print(f'File {dir_name}{task_dir_name}{task_name}.go already exists')
         else:
-            open(f'{dir_name}{task_dir_name}{task_name}.go', 'w').close()
+            with open(f'{dir_name}{task_dir_name}{task_name}.go', 'w') as task_file:
+                task_file.write(f'package {task_dir_name[1:]}')
 
     print('Finish create directorys for ' + str(task_count) + ' tasks')
 

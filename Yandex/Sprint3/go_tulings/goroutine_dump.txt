@@ -1,0 +1,104 @@
+goroutine profile: total 2
+1 @ 0x42e591 0x46145d 0x4aaed1 0x4aad05 0x4a7b2b 0x4b519e 0x465a61
+#	0x46145c	runtime/pprof.runtime_goroutineProfileWithLabels+0x1c	/usr/lib/go/src/runtime/mprof.go:1079
+#	0x4aaed0	runtime/pprof.writeRuntimeProfile+0xb0			/usr/lib/go/src/runtime/pprof/pprof.go:774
+#	0x4aad04	runtime/pprof.writeGoroutine+0x44			/usr/lib/go/src/runtime/pprof/pprof.go:734
+#	0x4a7b2a	runtime/pprof.(*Profile).WriteTo+0x14a			/usr/lib/go/src/runtime/pprof/pprof.go:369
+#	0x4b519d	main.main.func1+0x3d					/home/artem/Desktop/programs/Go/Yandex/Sprint3/go_tulings/main.go:23
+
+1 @ 0x43852e 0x462cd5 0x4b512c 0x4380dd 0x465a61
+#	0x462cd4	time.Sleep+0x114	/usr/lib/go/src/runtime/time.go:195
+#	0x4b512b	main.main+0x10b		/home/artem/Desktop/programs/Go/Yandex/Sprint3/go_tulings/main.go:34
+#	0x4380dc	runtime.main+0x29c	/usr/lib/go/src/runtime/proc.go:271
+
+goroutine profile: total 2
+1 @ 0x42e591 0x46145d 0x4aaed1 0x4aad05 0x4a7b2b 0x4b519e 0x465a61
+#	0x46145c	runtime/pprof.runtime_goroutineProfileWithLabels+0x1c	/usr/lib/go/src/runtime/mprof.go:1079
+#	0x4aaed0	runtime/pprof.writeRuntimeProfile+0xb0			/usr/lib/go/src/runtime/pprof/pprof.go:774
+#	0x4aad04	runtime/pprof.writeGoroutine+0x44			/usr/lib/go/src/runtime/pprof/pprof.go:734
+#	0x4a7b2a	runtime/pprof.(*Profile).WriteTo+0x14a			/usr/lib/go/src/runtime/pprof/pprof.go:369
+#	0x4b519d	main.main.func1+0x3d					/home/artem/Desktop/programs/Go/Yandex/Sprint3/go_tulings/main.go:23
+
+1 @ 0x43852e 0x462cd5 0x4b512c 0x4380dd 0x465a61
+#	0x462cd4	time.Sleep+0x114	/usr/lib/go/src/runtime/time.go:195
+#	0x4b512b	main.main+0x10b		/home/artem/Desktop/programs/Go/Yandex/Sprint3/go_tulings/main.go:34
+#	0x4380dc	runtime.main+0x29c	/usr/lib/go/src/runtime/proc.go:271
+
+goroutine profile: total 2
+1 @ 0x42e591 0x46145d 0x4aaed1 0x4aad05 0x4a7b2b 0x4b519e 0x465a61
+#	0x46145c	runtime/pprof.runtime_goroutineProfileWithLabels+0x1c	/usr/lib/go/src/runtime/mprof.go:1079
+#	0x4aaed0	runtime/pprof.writeRuntimeProfile+0xb0			/usr/lib/go/src/runtime/pprof/pprof.go:774
+#	0x4aad04	runtime/pprof.writeGoroutine+0x44			/usr/lib/go/src/runtime/pprof/pprof.go:734
+#	0x4a7b2a	runtime/pprof.(*Profile).WriteTo+0x14a			/usr/lib/go/src/runtime/pprof/pprof.go:369
+#	0x4b519d	main.main.func1+0x3d					/home/artem/Desktop/programs/Go/Yandex/Sprint3/go_tulings/main.go:23
+
+1 @ 0x43852e 0x462cd5 0x4b512c 0x4380dd 0x465a61
+#	0x462cd4	time.Sleep+0x114	/usr/lib/go/src/runtime/time.go:195
+#	0x4b512b	main.main+0x10b		/home/artem/Desktop/programs/Go/Yandex/Sprint3/go_tulings/main.go:34
+#	0x4380dc	runtime.main+0x29c	/usr/lib/go/src/runtime/proc.go:271
+
+goroutine profile: total 2
+1 @ 0x42e591 0x46145d 0x4aaed1 0x4aad05 0x4a7b2b 0x4b519e 0x465a61
+#	0x46145c	runtime/pprof.runtime_goroutineProfileWithLabels+0x1c	/usr/lib/go/src/runtime/mprof.go:1079
+#	0x4aaed0	runtime/pprof.writeRuntimeProfile+0xb0			/usr/lib/go/src/runtime/pprof/pprof.go:774
+#	0x4aad04	runtime/pprof.writeGoroutine+0x44			/usr/lib/go/src/runtime/pprof/pprof.go:734
+#	0x4a7b2a	runtime/pprof.(*Profile).WriteTo+0x14a			/usr/lib/go/src/runtime/pprof/pprof.go:369
+#	0x4b519d	main.main.func1+0x3d					/home/artem/Desktop/programs/Go/Yandex/Sprint3/go_tulings/main.go:23
+
+1 @ 0x43852e 0x462cd5 0x4b512c 0x4380dd 0x465a61
+#	0x462cd4	time.Sleep+0x114	/usr/lib/go/src/runtime/time.go:195
+#	0x4b512b	main.main+0x10b		/home/artem/Desktop/programs/Go/Yandex/Sprint3/go_tulings/main.go:34
+#	0x4380dc	runtime.main+0x29c	/usr/lib/go/src/runtime/proc.go:271
+
+goroutine profile: total 2
+1 @ 0x42e591 0x46145d 0x4aaed1 0x4aad05 0x4a7b2b 0x4b519e 0x465a61
+#	0x46145c	runtime/pprof.runtime_goroutineProfileWithLabels+0x1c	/usr/lib/go/src/runtime/mprof.go:1079
+#	0x4aaed0	runtime/pprof.writeRuntimeProfile+0xb0			/usr/lib/go/src/runtime/pprof/pprof.go:774
+#	0x4aad04	runtime/pprof.writeGoroutine+0x44			/usr/lib/go/src/runtime/pprof/pprof.go:734
+#	0x4a7b2a	runtime/pprof.(*Profile).WriteTo+0x14a			/usr/lib/go/src/runtime/pprof/pprof.go:369
+#	0x4b519d	main.main.func1+0x3d					/home/artem/Desktop/programs/Go/Yandex/Sprint3/go_tulings/main.go:23
+
+1 @ 0x43852e 0x462cd5 0x4b512c 0x4380dd 0x465a61
+#	0x462cd4	time.Sleep+0x114	/usr/lib/go/src/runtime/time.go:195
+#	0x4b512b	main.main+0x10b		/home/artem/Desktop/programs/Go/Yandex/Sprint3/go_tulings/main.go:34
+#	0x4380dc	runtime.main+0x29c	/usr/lib/go/src/runtime/proc.go:271
+
+goroutine profile: total 2
+1 @ 0x42e591 0x46145d 0x4aaed1 0x4aad05 0x4a7b2b 0x4b519e 0x465a61
+#	0x46145c	runtime/pprof.runtime_goroutineProfileWithLabels+0x1c	/usr/lib/go/src/runtime/mprof.go:1079
+#	0x4aaed0	runtime/pprof.writeRuntimeProfile+0xb0			/usr/lib/go/src/runtime/pprof/pprof.go:774
+#	0x4aad04	runtime/pprof.writeGoroutine+0x44			/usr/lib/go/src/runtime/pprof/pprof.go:734
+#	0x4a7b2a	runtime/pprof.(*Profile).WriteTo+0x14a			/usr/lib/go/src/runtime/pprof/pprof.go:369
+#	0x4b519d	main.main.func1+0x3d					/home/artem/Desktop/programs/Go/Yandex/Sprint3/go_tulings/main.go:23
+
+1 @ 0x43852e 0x462cd5 0x4b512c 0x4380dd 0x465a61
+#	0x462cd4	time.Sleep+0x114	/usr/lib/go/src/runtime/time.go:195
+#	0x4b512b	main.main+0x10b		/home/artem/Desktop/programs/Go/Yandex/Sprint3/go_tulings/main.go:34
+#	0x4380dc	runtime.main+0x29c	/usr/lib/go/src/runtime/proc.go:271
+
+goroutine profile: total 2
+1 @ 0x42e591 0x46145d 0x4aaed1 0x4aad05 0x4a7b2b 0x4b519e 0x465a61
+#	0x46145c	runtime/pprof.runtime_goroutineProfileWithLabels+0x1c	/usr/lib/go/src/runtime/mprof.go:1079
+#	0x4aaed0	runtime/pprof.writeRuntimeProfile+0xb0			/usr/lib/go/src/runtime/pprof/pprof.go:774
+#	0x4aad04	runtime/pprof.writeGoroutine+0x44			/usr/lib/go/src/runtime/pprof/pprof.go:734
+#	0x4a7b2a	runtime/pprof.(*Profile).WriteTo+0x14a			/usr/lib/go/src/runtime/pprof/pprof.go:369
+#	0x4b519d	main.main.func1+0x3d					/home/artem/Desktop/programs/Go/Yandex/Sprint3/go_tulings/main.go:23
+
+1 @ 0x43852e 0x462cd5 0x4b512c 0x4380dd 0x465a61
+#	0x462cd4	time.Sleep+0x114	/usr/lib/go/src/runtime/time.go:195
+#	0x4b512b	main.main+0x10b		/home/artem/Desktop/programs/Go/Yandex/Sprint3/go_tulings/main.go:34
+#	0x4380dc	runtime.main+0x29c	/usr/lib/go/src/runtime/proc.go:271
+
+goroutine profile: total 2
+1 @ 0x42e591 0x46145d 0x4aaed1 0x4aad05 0x4a7b2b 0x4b519e 0x465a61
+#	0x46145c	runtime/pprof.runtime_goroutineProfileWithLabels+0x1c	/usr/lib/go/src/runtime/mprof.go:1079
+#	0x4aaed0	runtime/pprof.writeRuntimeProfile+0xb0			/usr/lib/go/src/runtime/pprof/pprof.go:774
+#	0x4aad04	runtime/pprof.writeGoroutine+0x44			/usr/lib/go/src/runtime/pprof/pprof.go:734
+#	0x4a7b2a	runtime/pprof.(*Profile).WriteTo+0x14a			/usr/lib/go/src/runtime/pprof/pprof.go:369
+#	0x4b519d	main.main.func1+0x3d					/home/artem/Desktop/programs/Go/Yandex/Sprint3/go_tulings/main.go:23
+
+1 @ 0x43852e 0x462cd5 0x4b512c 0x4380dd 0x465a61
+#	0x462cd4	time.Sleep+0x114	/usr/lib/go/src/runtime/time.go:195
+#	0x4b512b	main.main+0x10b		/home/artem/Desktop/programs/Go/Yandex/Sprint3/go_tulings/main.go:34
+#	0x4380dc	runtime.main+0x29c	/usr/lib/go/src/runtime/proc.go:271
+

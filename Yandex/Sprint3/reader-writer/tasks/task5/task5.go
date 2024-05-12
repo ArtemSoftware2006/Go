@@ -1,45 +1,30 @@
 package task5
 
-/*
-	Напишите функцию Contains(r io.Reader, seq []byte) (bool, error)
-	которая должна найти первое вхождение байт seq в данных, доступных через Reader r.
-	Если последовательность найдена - верните true, nil, иначе false, nil.
-	В случае возникновения ошибки - false и возникшую ошибку.
-	**/
-
 import (
+	"bytes"
 	"io"
 )
 
-func slicesEqual(a, b []byte) bool {
-	if len(a) != len(b) {
-		return false
-	}
-	for i := range a {
-		if a[i] != b[i] {
-			return false
-		}
-	}
-	return true
-}
-
 func Contains(r io.Reader, seq []byte) (bool, error) {
-	var buf = make([]byte, len(seq))
+	var bufSize int16 = 1024
+	buf1 := make([]byte, bufSize)
+	buf2 := make([]byte, bufSize)
+	var err error
+	for err != io.EOF {
 
-	for {
-		n, err := r.Read(buf)
+		_, err = r.Read(buf1)
 		if err != nil && err != io.EOF {
 			return false, err
 		}
-
-		if err == io.EOF {
-			break
+		_, err = r.Read(buf2)
+		if err != nil && err != io.EOF {
+			return false, err
 		}
-
-		if slicesEqual(buf[:n], seq) {
+		if bytes.Contains(append(buf1, buf2...), seq) {
 			return true, nil
 		}
-	}
 
-	return false, nil
+		return false, nil
+	}
+	return false, io.EOF
 }
